@@ -1,366 +1,316 @@
-# README – Pandas Data Analysis and Visualization Lab Programs
+# DAV Modules
 
-## Overview
+This repository contains a collection of Python-based data analysis and visualization experiments focused on Pandas, NumPy, Matplotlib, Seaborn, SciPy, and statistical modeling. The notebooks are organized by experiment number and represent a practical learning path from basic data handling to statistical inference and forecasting.
 
-This repository contains four Python programs that demonstrate fundamental and advanced data analysis techniques using **Pandas**, **NumPy**, **Matplotlib**, **Seaborn**, and **SciPy**. These programs cover data loading, preprocessing, exploratory data analysis (EDA), visualization, and statistical analysis using real-world datasets.
+## Repository Structure
 
----
+- Experiment - 1
+- Experiment - 2A, 2B, 2C, 2D
+- Experiment -3A, 3B, 3C, 3D
+- Experiment -4A, 4B, 4C, 4D
+- Experiment -5A, 5B, 5C
 
-# Program 1: Pandas Data Manipulation and Basic Visualization
-
-## Objective
-
-The objective of this program is to understand the basic operations of the Pandas library, including reading datasets, handling missing values, filtering data, sorting, grouping, creating new columns, exporting processed data, and generating simple visualizations.
-
-### Libraries Used
-
-* Pandas
-* NumPy
-* Matplotlib
-
-### Operations Performed
-
-* Read CSV file
-* Display first and last records
-* Display dataset information
-* Generate descriptive statistics
-* Handle missing values
-* Create a new column
-* Perform Series operations
-* Filter rows using conditions
-* Group data and calculate mean values
-* Sort records
-* Apply Boolean masking
-* Remove duplicate rows
-* Remove missing values
-* Create a subset of selected columns
-* Export processed data into a CSV file
-* Calculate Sum, Mean and Standard Deviation
-
-### Visualizations
-
-* Bar Chart
-* Line Chart
-
-### Functions Used
-
-| Function          | Description                   |
-| ----------------- | ----------------------------- |
-| read_csv()        | Reads CSV dataset             |
-| head()            | Displays first five rows      |
-| tail()            | Displays last five rows       |
-| info()            | Displays dataset information  |
-| describe()        | Generates statistical summary |
-| fillna()          | Fills missing values          |
-| groupby()         | Groups data                   |
-| sort_values()     | Sorts data                    |
-| drop_duplicates() | Removes duplicate records     |
-| dropna()          | Removes missing values        |
-| to_csv()          | Saves processed dataset       |
-
-### Learning Outcome
-
-After completing this program, students will be able to:
-
-* Import datasets
-* Clean datasets
-* Filter and sort data
-* Perform aggregation
-* Export processed data
-* Create basic graphs
+> Some notebooks are starter or continuation files, while others contain the main implementation of the corresponding lab activity.
 
 ---
 
-# Program 2: Importing Data from Multiple Sources
+# Experiment - 1: Setup and Pandas Fundamentals
 
-## Objective
+## Focus
+This experiment introduces the working environment and the core Python libraries used throughout the course.
 
-This program demonstrates how to import data from different sources such as CSV files, Excel files, and online datasets.
+## Topics Covered
+- Importing NumPy, Pandas, Matplotlib, and Seaborn
+- Checking library versions
+- Basic data-frame operations
+- Loading CSV data
+- Inspecting structure, columns, and sample records
+- Learning the fundamentals of data analysis workflow
 
-### Libraries Used
-
-* Pandas
-
-### Data Sources
-
-* CSV File
-* Excel File
-* Online Dataset (GitHub URL)
-
-### Operations Performed
-
-* Read CSV file
-* Read Excel file
-* Read data from URL
-* Display datasets
-* Handle missing values using Forward Fill
-* Handle missing values using Backward Fill
-* Remove missing records
-* Save processed CSV file
-* Save processed Excel file
-
-### Functions Used
-
-| Function     | Description                   |
-| ------------ | ----------------------------- |
-| read_csv()   | Reads CSV files               |
-| read_excel() | Reads Excel files             |
-| ffill()      | Forward fills missing values  |
-| bfill()      | Backward fills missing values |
-| dropna()     | Removes missing values        |
-| to_csv()     | Saves CSV file                |
-| to_excel()   | Saves Excel file              |
-
-### Learning Outcome
-
-Students learn how to:
-
-* Import datasets from different formats
-* Handle missing values
-* Export cleaned datasets
-* Work with online datasets
+## Learning Outcome
+Students become familiar with the programming environment and the basic tools used for data exploration and visualization.
 
 ---
 
-# Program 3: Exploratory Data Analysis Using Titanic Dataset
+# Experiment - 2A: Data Import and Preparation
 
-## Objective
+## Focus
+This experiment emphasizes collecting data and preparing it for analysis.
 
-The objective of this program is to perform Exploratory Data Analysis (EDA) on the Titanic dataset and understand relationships among different passenger attributes using statistical analysis and visualization.
+## Topics Covered
+- Importing datasets from files
+- Exploring sample records and dataset shape
+- Understanding columns and types
+- Handling missing or inconsistent data
+- Formatting data for further analysis
 
-### Dataset
-
-Titanic Passenger Dataset
-
-### Libraries Used
-
-* Pandas
-* Seaborn
-* Matplotlib
-
-### Dataset Analysis
-
-The program displays:
-
-* First and last records
-* Dataset dimensions
-* Column names
-* Data types
-* Missing values
-* Duplicate records
-* Statistical summary
-
-### Statistical Analysis
-
-The following analyses are performed:
-
-* Passenger survival count
-* Gender distribution
-* Passenger class distribution
-* Embarked port distribution
-* Average fare by passenger class
-* Average age by gender
-* Average fare based on survival
-* Correlation matrix
-* Highest fare passengers
-* Oldest passengers
-
-### Visualizations
-
-The program generates the following plots:
-
-1. Survival Count Plot
-2. Gender Distribution Plot
-3. Passenger Class Distribution
-4. Age Histogram
-5. Fare Histogram
-6. Fare Box Plot by Passenger Class
-7. Age vs Fare Scatter Plot
-8. Age Distribution by Survival (Violin Plot)
-9. Average Fare by Passenger Class (Bar Plot)
-10. Correlation Heatmap
-11. Pair Plot
-
-### Functions Used
-
-| Function      | Description                          |
-| ------------- | ------------------------------------ |
-| countplot()   | Displays frequency counts            |
-| histplot()    | Displays histogram                   |
-| boxplot()     | Shows outliers and spread            |
-| violinplot()  | Shows density and distribution       |
-| scatterplot() | Shows relationship between variables |
-| barplot()     | Displays average values              |
-| heatmap()     | Displays correlation matrix          |
-| pairplot()    | Compares multiple variables          |
-
-### Learning Outcome
-
-Students understand:
-
-* Exploratory Data Analysis
-* Feature relationships
-* Correlation analysis
-* Distribution analysis
-* Data visualization techniques
+## Learning Outcome
+Students learn how to start from raw data and convert it into a clean dataset suitable for analysis.
 
 ---
 
-# Program 4: Univariate Statistical Analysis Using Pima Indians Diabetes Dataset
+# Experiment - 2B: Google Play Store Dataset Analysis
 
-## Objective
+## Focus
+This experiment works with the Google Play Store dataset and focuses on practical data cleaning and inspection.
 
-The objective of this program is to perform univariate statistical analysis on numerical attributes of the Pima Indians Diabetes dataset.
+## Topics Covered
+- Reading the dataset with Pandas
+- Displaying the first and last rows
+- Checking row and column structure
+- Identifying data types and missing entries
+- Reviewing messy real-world dataset quality
+- Preparing data for later analysis and visualization
 
-### Dataset
-
-Pima Indians Diabetes Dataset
-
-### Libraries Used
-
-* Pandas
-* NumPy
-* SciPy
-
-### Numerical Features
-
-* Glucose
-* Blood Pressure
-* Skin Thickness
-* Insulin
-* BMI
-* Diabetes Pedigree Function
-* Age
-
-### Statistical Measures Calculated
-
-* Mean
-* Median
-* Mode
-* Minimum
-* Maximum
-* Range
-* Variance
-* Standard Deviation
-* Skewness
-* Kurtosis
-
-### Additional Analysis
-
-* Outcome distribution
-* Correlation matrix
-
-### Statistical Terms
-
-**Mean**
-
-Average value of the dataset.
-
-**Median**
-
-Middle value after arranging the observations.
-
-**Mode**
-
-Most frequently occurring value.
-
-**Variance**
-
-Measures how much the data varies from the mean.
-
-**Standard Deviation**
-
-Measures the spread of observations around the mean.
-
-**Skewness**
-
-Measures the symmetry of the distribution.
-
-* Positive → Right-skewed
-* Negative → Left-skewed
-* Zero → Symmetric
-
-**Kurtosis**
-
-Measures the peakedness of the distribution.
-
-* Positive → Heavy tails
-* Negative → Light tails
-* Zero → Normal distribution
-
-### Learning Outcome
-
-Students learn:
-
-* Descriptive statistics
-* Statistical analysis
-* Healthcare data analysis
-* Data interpretation
-* Correlation analysis
+## Learning Outcome
+Students gain confidence in handling a real-world dataset that contains incomplete or inconsistent values.
 
 ---
 
-# Libraries Used
+# Experiment - 2C: Multiple Data Sources and Data Integration
 
-| Library    | Purpose                            |
-| ---------- | ---------------------------------- |
-| Pandas     | Data manipulation and analysis     |
-| NumPy      | Numerical computations             |
-| Matplotlib | Basic plotting                     |
-| Seaborn    | Advanced statistical visualization |
-| SciPy      | Statistical calculations           |
+## Focus
+This experiment demonstrates that data can come from more than one source and must often be combined or cleaned before use.
 
----
+## Topics Covered
+- Reading CSV files
+- Reading Excel files
+- Importing data from online sources
+- Combining or comparing different data sources
+- Managing missing values
+- Saving processed results to new files
 
-# Common Pandas Functions
-
-| Function          | Purpose                  |
-| ----------------- | ------------------------ |
-| read_csv()        | Import CSV file          |
-| read_excel()      | Import Excel file        |
-| head()            | Display first records    |
-| tail()            | Display last records     |
-| info()            | Dataset information      |
-| describe()        | Statistical summary      |
-| groupby()         | Group data               |
-| sort_values()     | Sort records             |
-| fillna()          | Fill missing values      |
-| dropna()          | Remove missing values    |
-| drop_duplicates() | Remove duplicate records |
-| value_counts()    | Frequency count          |
-| corr()            | Correlation matrix       |
-| to_csv()          | Export CSV               |
-| to_excel()        | Export Excel             |
+## Learning Outcome
+Students understand how to work with heterogeneous data sources and prepare integrated datasets for analysis.
 
 ---
 
-# Visualization Techniques
+# Experiment - 2D: Additional Data Handling Practice
 
-| Visualization | Purpose                                                   |
-| ------------- | --------------------------------------------------------- |
-| Histogram     | Displays numerical data distribution                      |
-| Bar Plot      | Compares categories                                       |
-| Count Plot    | Shows frequency of categories                             |
-| Scatter Plot  | Shows relationship between numerical variables            |
-| Box Plot      | Detects outliers and spread                               |
-| Violin Plot   | Shows density and distribution                            |
-| Heatmap       | Displays correlation matrix                               |
-| Pair Plot     | Compares relationships among multiple numerical variables |
+## Focus
+This notebook acts as an additional practice section for data preparation and exploratory tasks.
+
+## Topics Covered
+- Dataset review
+- Data cleaning exercises
+- Repeated exploratory checks
+- Practice on preprocessing workflows
+
+## Learning Outcome
+Students reinforce the data-cleaning process with additional hands-on practice.
+
+---
+
+# Experiment - 3A: Univariate Statistical Analysis on Diabetes Data
+
+## Focus
+This experiment performs statistical analysis on the diabetes dataset using univariate measures.
+
+## Topics Covered
+- Reading the diabetes dataset
+- Identifying numerical variables
+- Computing descriptive statistics such as mean, median, mode, variance, and standard deviation
+- Measuring skewness and kurtosis
+- Studying distribution and spread of clinical features
+
+## Learning Outcome
+Students learn how to interpret basic statistical concepts and analyze healthcare-related data distributions.
+
+---
+
+# Experiment - 3B: Regression Analysis
+
+## Focus
+This experiment introduces prediction models using regression techniques.
+
+## Topics Covered
+- Linear regression
+- Logistic regression
+- Splitting data into training and testing sets
+- Building predictive models
+- Interpreting coefficient-based relationships
+- Evaluating model performance
+
+## Learning Outcome
+Students learn the difference between linear and logistic regression and how these models are used to understand and predict outcomes.
+
+---
+
+# Experiment - 3C: Multiple Linear Regression
+
+## Focus
+This experiment extends simple regression to multiple independent variables.
+
+## Topics Covered
+- Selecting multiple predictors
+- Building a multivariable regression model
+- Analyzing relationships between several features and a target variable
+- Using performance metrics to assess the model
+
+## Learning Outcome
+Students understand how multiple factors jointly influence a dependent variable and how to model that relationship statistically.
+
+---
+
+# Experiment - 3D: Advanced Regression and Comparative Modeling
+
+## Focus
+This experiment continues the regression-focused work with additional diabetes-based analysis.
+
+## Topics Covered
+- Additional regression exercises
+- Comparative statistical modeling
+- Relationship analysis between variables
+- Practice on dataset-based prediction tasks
+
+## Learning Outcome
+Students strengthen their understanding of predictive analytics and regression-based decision making.
+
+---
+
+# Experiment - 4A: Descriptive Statistics and Distribution Analysis
+
+## Focus
+This experiment focuses on describing the statistical behavior of the dataset.
+
+## Topics Covered
+- Mean, median, mode
+- Range, variance, and standard deviation
+- Skewness and kurtosis
+- Correlation analysis
+- Distribution summaries for important variables
+
+## Learning Outcome
+Students learn how to describe datasets numerically and explain the shape and spread of data.
+
+---
+
+# Experiment - 4B: Z-Test
+
+## Focus
+This experiment applies a z-test to check whether a sample mean differs significantly from a known value.
+
+## Topics Covered
+- Hypothesis testing
+- Standard error
+- Z-statistic calculation
+- P-value interpretation
+- Decision-making using significance testing
+
+## Learning Outcome
+Students learn the role of inferential statistics in testing claims about population means.
+
+---
+
+# Experiment - 4C: Independent Samples T-Test
+
+## Focus
+This experiment compares the means of two independent groups.
+
+## Topics Covered
+- Formulating null and alternative hypotheses
+- Independent t-test implementation
+- Comparing two sample groups on numerical features
+- Interpreting p-values and statistical significance
+
+## Learning Outcome
+Students learn how to compare groups and determine whether their differences are statistically meaningful.
+
+---
+
+# Experiment - 4D: One-Way ANOVA
+
+## Focus
+This experiment extends hypothesis testing to more than two groups using ANOVA.
+
+## Topics Covered
+- One-way analysis of variance
+- Comparing means across multiple groups
+- F-statistic and p-value interpretation
+- Detecting whether group differences are significant
+
+## Learning Outcome
+Students understand when to use ANOVA and how it differs from a t-test.
+
+---
+
+# Experiment - 5A: Time-Series and Forecasting Foundations
+
+## Focus
+This experiment introduces the initial ideas used in time-series analysis and forecasting.
+
+## Topics Covered
+- Basic time-based data analysis
+- Trend and pattern observation
+- Series preparation for forecasting
+- Practice with temporal datasets
+
+## Learning Outcome
+Students begin learning how sequential data is analyzed and modeled over time.
+
+---
+
+# Experiment - 5B: Forecasting Practice and Model Extension
+
+## Focus
+This experiment continues the forecasting workflow and expands the practical understanding of temporal analysis.
+
+## Topics Covered
+- Further time-series practice
+- Statistical model continuation
+- Trend and pattern checking
+- Forecast-oriented analysis
+
+## Learning Outcome
+Students improve their ability to analyze time-dependent patterns and prepare data for forecasting tasks.
+
+---
+
+# Experiment - 5C: ARIMA and Moving Average Forecasting
+
+## Focus
+This experiment focuses on time-series forecasting using moving averages and ARIMA modeling.
+
+## Topics Covered
+- Plotting time-series data
+- Smoothing using moving averages
+- Seasonal decomposition concepts
+- ARIMA model creation
+- Forecasting future values
+- Model evaluation using test data
+
+## Learning Outcome
+Students learn how classical forecasting methods are used to predict future values from time-based data.
+
+---
+
+# Tools and Libraries Used
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- SciPy
+- Statsmodels
+- Scikit-learn
 
 ---
 
 # Overall Learning Outcomes
 
-By completing these four programs, students will be able to:
+By completing these experiments, students will be able to:
 
-* Import datasets from CSV, Excel, and online sources.
-* Clean and preprocess datasets.
-* Handle missing values and duplicate records.
-* Perform descriptive statistical analysis.
-* Filter, sort, group, and aggregate data using Pandas.
-* Export processed datasets into CSV and Excel formats.
-* Perform Exploratory Data Analysis (EDA) on real-world datasets.
-* Generate professional visualizations using Matplotlib and Seaborn.
-* Interpret statistical measures such as mean, median, mode, variance, standard deviation, skewness, and kurtosis.
-* Analyze relationships among variables using correlation matrices, scatter plots, heatmaps, and pair plots.
-* Apply data analysis techniques to business, healthcare, finance, research, and machine learning datasets.
+- Import and preprocess datasets from multiple sources
+- Clean and prepare raw data for analysis
+- Perform descriptive and inferential statistics
+- Use visualizations to understand data patterns
+- Build regression and forecasting models
+- Interpret statistical results and make evidence-based conclusions
+- Apply data science techniques to real-world datasets in business, healthcare, and research contexts
+
+---
+
+# Summary
+
+This project is a structured data analysis lab that gradually moves from basic data handling to advanced statistical analysis and forecasting. It is designed to help students build a strong foundation in data science, statistics, and practical machine learning workflows using Python.
